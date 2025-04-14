@@ -20,15 +20,8 @@
     <section class="s-ticket">
         <div class="ticket-wrapper" id="ticketWrapper" data-tilt="">
             <div class="ticket-card">
-                <!-- Frente da carta -->
-                <div class="ticket  content_frente">
-                    <div class="image">
-                        <img src="./img/imagm.webp" alt="Mickey 17">
-                        <strong>WARNER BROS. ORIGINAL TICKET</strong>
-                    </div>
-                </div>
                 <!-- Verso da carta -->
-                <div class="ticket  content_verso">
+                <div class="content_verso">
                     <div class="ticket__header">
                         <strong>WARNER BROS. ORIGINAL TICKET</strong>
                     </div>
@@ -86,9 +79,9 @@
     <script src="./js/vanilla-tilt.min.js"></script>
     <script>
         const ticketCard = document.querySelector('.ticket-card');
-      
         ticketCard.addEventListener('click', () => {
-          ticketCard.classList.toggle('flipped');
+            ticketCard.classList.toggle('flipped');
         });
-      </script>
+    </script>
+    
 </body>

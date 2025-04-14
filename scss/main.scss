@@ -108,24 +108,7 @@ html {
             right: -($hole-size / 2);
         }
 
-        .ticket.content_frente {
-            // background-color: #d0d0c9;
-            position: absolute;
-            width: $tk-width;
-
-            .image {
-                position: relative;
-                width: 100%;
-                height: 100%;
-
-                img {
-                    width: 100%;
-                    height: $tk-height
-                }
-            }
-        }
-
-        .ticket.content_verso {
+        .content_verso {
             padding: 8mm 5mm 0 5mm;
             z-index: 2;
             top: 0;
@@ -236,39 +219,4 @@ html {
         }
     }
 
-}
-
-.ticket-card {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-
-    &.flipped {
-        transform: rotateY(180deg);
-    }
-
-    .ticket {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-    }
-
-    .content_frente,
-    .content_verso {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    .content_frente {
-        z-index: 2;
-    }
-
-    .content_verso {
-        // z-index: 2;
-        transform: rotateY(180deg);
-    }
 }
